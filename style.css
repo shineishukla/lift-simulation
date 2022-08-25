@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #92ebe6;
+    margin: 10px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.floor-input,
+.lift-input {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.floor-input input,
+.lift-input input {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+
+.button-floor{
+    justify-content: left;
+    align-items: flex-start;
+    border:none;
+    background-color: #791c79;
+    color:beige;
+    border: 2px;
+    font-size: 15px;
+    border: 2px solid #e599df;
+    margin: 2px;
+}
+
+.generatebutton {
+    margin-bottom: 10px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color:#ef81f3;
+}
+
+.lifts {
+    width: 50px;
+    height: 112px;
+    background-color: pink;
+    position: absolute;
+    left: 15%;
+    border: 2px solid;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.lifts p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.liftMotion{
+    transition-duration: 5s;
+}
+
+.lifts .gate {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    border: 1px solid rgb(85, 83, 83);
+    background-color: black;
+}
+
+.gateLeft {
+    left: 0;
+}
+
+.gateRight {
+    right: 0;
+}
+
+.floor {
+    height: 116px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #92ebe6;
+    padding: 5px;
+    border-bottom: 2px black dotted;
+}
+
+.animateLiftsDoorsOnFloorStop  {
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-name: doorSimulation;
+}
+
+@keyframes doorSimulation {
+    from {
+        width: 50%;
+    }
+    50% {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
