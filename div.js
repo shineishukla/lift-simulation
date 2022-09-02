@@ -108,14 +108,14 @@ function translateLift(liftNo,targetLiftPosn) {
 
     if (currLiftPosn != targetLiftPosn) {
         allLiftInfo[liftNo].inMotion = true
-        let unitsToMove = parseInt(Math.abs(targetLiftPosn - currLiftPosn)+1)
-        let motionDis = -100 * parseInt(targetLiftPosn)
-        // console.log(`dis is ${motionDis}`)
+        let unitsToMove = (Math.abs(targetLiftPosn - currLiftPosn)+1)
+        let motionDis = -100 * (targetLiftPosn)
+       
         reqLift.style.transitionTimingFunction = 'linear'
         reqLift.style.transform = `translateY(${motionDis}px)`;
-        reqLift.style.transitionDuration = `${unitsToMove*2}s`;
+        reqLift.style.transitionDuration = `${unitsToMove*1}s`;
         
-        let timeInMs = unitsToMove*2000
+        let timeInMs = unitsToMove*1500
         setTimeout(()=>{
             currLiftPositionArr[liftNo] = targetLiftPosn
             animateLiftsDoors(liftNo,targetLiftPosn)
