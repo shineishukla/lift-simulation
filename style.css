@@ -57,10 +57,12 @@ h1{
     background-color: #ef81f3
     color: #ef81f3;
     position: absolute;
-    left: 15%;
+    left: 0;
+    top:0;
     border: 2px solid;
     align-items: center;
     border-radius: 5px;
+    content: none;
 }
 
 .lifts p {
@@ -79,7 +81,7 @@ h1{
     position: absolute;
     height: 100%;
     width: 50%;
-    border: 1px solid rgb(85, 83, 83);
+    border: 1px solid rgb(221, 142, 221);
     background-color: black;
 }
 
