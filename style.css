@@ -122,3 +122,8 @@ h1{
         width: 50%;
     }
 }
+
+@media (max-width: 768px) {
+    .header {
+    font-size: var(--fontsize-large);
+}}
