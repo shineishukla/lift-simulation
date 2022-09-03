@@ -126,4 +126,15 @@ h1{
 @media (max-width: 768px) {
     .header {
     font-size: var(--fontsize-large);
-}}
+}
+    .floor {
+    height: 101px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #92ebe6;
+    padding: 5px;
+    border-bottom: 2px black dotted;
+}
+}
