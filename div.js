@@ -26,20 +26,27 @@ const validateLiftAndFloorEntries = ()=>{
     noOfFloors = document.getElementById('noOfFloors').value
     noOfLifts = document.getElementById('noOfLifts').value
     
-    if ((noOfFloors== ''))
-    if ((noOfLifts== '')) {
+    if ((noOfFloors == ''))
+    if ((noOfLifts == '')) {
         alert('Note: Enter a valid number of floors and lifts.')
         return false
     }
-    noOfFloors = parseInt(noOfFloors)
-    if (noOfFloors > 10) {
-        alert('Only 10 Floor are supported in the app currently !!')
+
+    noOfFloors = document.getElementById('noOfFloors').value
+    noOfLifts = document.getElementById('noOfLifts').value
+
+    if ((noOfFloors < 0))
+    if ((noOfLifts < 0)) {
+        alert('Note: Negative values are not allowed.')
         return false
     }
+
+    noOfFloors = document.getElementById('noOfFloors').value
+    noOfLifts = document.getElementById('noOfLifts').value
     
-    noOfLifts = parseInt(noOfLifts)
-    if (noOfLifts > 10) {
-        alert('Only 10 Lifts are supported in the app currently !!')
+    if ((noOfFloors > 10))
+    if ((noOfLifts > 10)) {
+        alert('Note: Only 10 floors and lifts are allowed.')
         return false
     }
     return true
