@@ -25,28 +25,24 @@ const validateLiftAndFloorEntries = ()=>{
     
     noOfFloors = document.getElementById('noOfFloors').value
     noOfLifts = document.getElementById('noOfLifts').value
-    // console.log(`noOfFloors is ${noOfFloors.value} and noOfLifts is ${noOfLifts}`)
     
-    if (isNaN(noOfFloors)) {
-        alert('enter a valid no of Floor')
-        return 0
+    if ((noOfFloors== ''))
+    if ((noOfLifts== '')) {
+        alert('Note: Enter a valid number of floors and lifts.')
+        return false
     }
     noOfFloors = parseInt(noOfFloors)
     if (noOfFloors > 10) {
         alert('Only 10 Floor are supported in the app currently !!')
-        return 0
+        return false
     }
     
-    if (isNaN(noOfLifts)) {
-        alert('enter a valid no of Lifts')
-        return 0
-    }
     noOfLifts = parseInt(noOfLifts)
     if (noOfLifts > 10) {
         alert('Only 10 Lifts are supported in the app currently !!')
-        return 0
+        return false
     }
-    return 1
+    return true
 }
 
 
