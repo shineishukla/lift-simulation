@@ -31,6 +31,15 @@ const validateLiftAndFloorEntries = ()=>{
         alert('Note: Enter a valid number of floors and lifts.')
         return false
     }
+    
+    noOfFloors = document.getElementById('noOfFloors').value
+    noOfLifts = document.getElementById('noOfLifts').value
+    
+    if ((noOfFloors == '0'))
+    if ((noOfLifts == '0')) {
+        alert('Note: Enter a valid number of floors and lifts.')
+        return false
+    }
 
     noOfFloors = document.getElementById('noOfFloors').value
     noOfLifts = document.getElementById('noOfLifts').value
