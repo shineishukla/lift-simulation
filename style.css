@@ -124,7 +124,7 @@ h1{
 }
 
 @media (max-width: 768px) {
-    .header {
-    font-size: var(--fontsize-large);
-}
+    [class*="col-"] {
+    width: 100%;
+  }
 }
