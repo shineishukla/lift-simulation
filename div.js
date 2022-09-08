@@ -31,7 +31,6 @@ const validateLiftAndFloorEntries = ()=>{
         alert('Note: Enter a valid number of floors and lifts.')
         return false
     }
-    
     noOfFloors = document.getElementById('noOfFloors').value
     noOfLifts = document.getElementById('noOfLifts').value
     
@@ -75,7 +74,7 @@ const generateFloors = (n)=> {
         <p>${floorNo}</p>
         <div>
         <button id=up${currLevel} class="button-floor upBttn">Up</button><br>
-        <button id=down${currLevel} class="button-floor downBttn">Down</button>
+        <button id=down${currLevel} class="button-floor downBttn">Down</button><br>
         </div>
         `;
         document.getElementById('simulationArea').appendChild(currFloor);
@@ -122,7 +121,7 @@ function translateLift(liftNo,targetLiftPosn) {
         allLiftInfo[liftNo].inMotion = true
         let unitsToMove = (Math.abs(targetLiftPosn - currLiftPosn)+1)
         let motionDis = -100 * (targetLiftPosn)
-       
+        
         reqLift.style.transitionTimingFunction = 'linear'
         reqLift.style.transform = `translateY(${motionDis}px)`;
         reqLift.style.transitionDuration = `${unitsToMove*1}s`;
