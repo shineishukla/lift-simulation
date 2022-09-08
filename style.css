@@ -32,14 +32,13 @@ h1{
 .button-floor{
     justify-content: left;
     align-items: flex-start;
-    border:none;
     background-color: #791c79;
     color:beige;
     border: 2px;
-    font-size: 14px;
+    font-size: 12px;
     border: 1px solid #e599df;
-    margin: -1px;
-    margin-bottom: -1px;
+    margin: -4px;
+    margin-bottom: -14px;
 }
 
 .generatebutton {
@@ -51,6 +50,11 @@ h1{
     border: none;
     background-color:#ef81f3;
 }
+
+.generatebutton:hover {
+    transform: scale(1.1);
+}
+
 
 .lifts {
     width: 60px;
@@ -102,11 +106,12 @@ h1{
     justify-content: space-between;
     background-color: #92ebe6;
     padding: 5px;
-    border-bottom: black 1px dotted
+    border-bottom: black 1px dotted;
 }
+   
 
 .animateLiftsDoorsOnFloorStop  {
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-name: doorSimulation;
 }
@@ -117,8 +122,8 @@ h1{
     font-size: var(--fontsize-large);
 }
     .lifts {
-    width: 60px;
-    height: 100px;
+    width: 30px;
+    height: 50px;
     background-color: #ef81f3;
     color: #ef81f3;
     position: absolute;
@@ -126,18 +131,18 @@ h1{
     top:0;
     border: 2px solid;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 2.5px;
     content: none;
 }
-/*   .floor {
+/*    .floor {
     height: 50px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #92ebe6;
-    padding: 5px;
-    border-bottom: black 1px dotted;
+    padding: 2.5px;
+    border-bottom: black 0.5px dotted;
 }
     .button-floor{
     justify-content: left;
@@ -151,3 +156,4 @@ h1{
     margin-bottom: -0.5px;
 } */
 }
+
