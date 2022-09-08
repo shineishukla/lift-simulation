@@ -111,20 +111,32 @@ h1{
     animation-name: doorSimulation;
 }
 
-@keyframes doorSimulation {
-    from {
-        width: 50%;
-    }
-    50% {
-        width: 0%;
-    }
-    to {
-        width: 50%;
-    }
-}
 
 @media (max-width: 768px) {
     .header {
     font-size: var(--fontsize-large);
+}
+    .lifts {
+    width: 30px;
+    height: 50px;
+    background-color: #ef81f3;
+    color: #ef81f3;
+    position: absolute;
+    left: 0;
+    top:0;
+    border: 2px solid;
+    align-items: center;
+    border-radius: 5px;
+    content: none;
+}
+    .floor {
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #92ebe6;
+    padding: 5px;
+    border-bottom: black 1px dotted;
 }
 }
