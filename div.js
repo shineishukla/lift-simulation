@@ -66,7 +66,7 @@ const generateFloors = (n)=> {
     document.getElementById('simulationArea').innerHTML = ''
     for (let i=0;i<n;i++) {
         let currLevel = `L${n-i-1}`
-        let floorNo = `Level-${n - i - 1}`
+        let floorNo = `${n - i - 1}`
         let currFloor = document.createElement('div')
         currFloor.setAttribute('id',floorNo)
 
