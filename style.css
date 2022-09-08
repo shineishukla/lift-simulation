@@ -129,7 +129,7 @@ h1{
     border-radius: 5px;
     content: none;
 }
-    .floor {
+/*   .floor {
     height: 50px;
     position: relative;
     display: flex;
@@ -149,5 +149,5 @@ h1{
     border: 0.5px solid #e599df;
     margin: -0.5px;
     margin-bottom: -0.5px;
-} 
+} */
 }
