@@ -122,8 +122,8 @@ h1{
     font-size: var(--fontsize-large);
 }
     .lifts {
-    width: 30px;
-    height: 50px;
+    width: 60px;
+    height: 100px;
     background-color: #ef81f3;
     color: #ef81f3;
     position: absolute;
