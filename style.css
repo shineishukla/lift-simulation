@@ -102,7 +102,7 @@ h1{
     justify-content: space-between;
     background-color: #92ebe6;
     padding: 5px;
-    border-bottom: 2px black dotted;
+    border: black 1px dotted;
 }
 
 .animateLiftsDoorsOnFloorStop  {
