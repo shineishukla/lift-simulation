@@ -126,14 +126,13 @@ h1{
     height: 50px;
     background-color: #ef81f3;
     color: #ef81f3;
-    position: fixed;
+    position: relative;
     left: 0;
     top:0;
     border: 2px solid;
     align-items: center;
     border-radius: 2.5px;
-    content: none;
-    bottom: 0;    
+    content: none;  
 }
 /*    .floor {
     height: 50px;
