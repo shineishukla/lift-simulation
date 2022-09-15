@@ -119,3 +119,13 @@ body {
         width: 50%;
     }
 }
+
+/* For laptop and small screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* For mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+    
+}
