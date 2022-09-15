@@ -36,6 +36,10 @@ body {
     margin: -4px;
 }
 
+.button-floor:hover {
+    transform:scale(1.3)
+}
+
 .generatebutton {
     margin-bottom: 10px;
     outline: none;
