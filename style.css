@@ -145,13 +145,7 @@ body {
         content: none;
     }
     
-   /* .lifts p {
-        position: absolute;
-        top: 25%;
-        left: 25%;
-        transform: translate(-25%, -25%);
-    }
-    
+   /* 
     .floor {
         height: 50px;
         position: relative;
@@ -162,6 +156,13 @@ body {
         padding: 2.5px;
         border-bottom: black 0.5px dotted;
     }
+    .button-floor{
+    justify-content: left;
+    align-items: flex-start;
+    background-color: #92ebe6;
+    border: none;
+    margin: -2px;
+}
     */
     
     .lifts .gate {
