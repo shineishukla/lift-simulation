@@ -26,30 +26,39 @@ const validateLiftAndFloorEntries = ()=>{
     noOfFloors = document.getElementById('noOfFloors').value
     noOfLifts = document.getElementById('noOfLifts').value
     // console.log(`noOfFloors is ${noOfFloors.value} and noOfLifts is ${noOfLifts}`)
+    if ((noOfFloors == '0'))
+    if ((noOfLifts == '0')) {
+        alert('❗❗ Enter a valid number of floors and lifts  ❗❗')
+        return false
+    }
+    noOfFloors = document.getElementById('noOfFloors').value
+    noOfLifts = document.getElementById('noOfLifts').value
+
+    if ((noOfFloors == ''))
+    if ((noOfLifts == '')) {
+        alert('❗❗ Enter a valid number of floors and lifts ❗❗')
+        return false
+    }    
+    noOfFloors = document.getElementById('noOfFloors').value
+    noOfLifts = document.getElementById('noOfLifts').value
     
-    if (isNaN(noOfFloors)) {
-        alert('enter a valid no of Floor')
-        return 0
+    if ((noOfFloors > 10))
+    if ((noOfLifts > 10)){
+        alert('❗❗ Only 10 floor and lifts are supported in the app currently ❗❗')
+        return false
     }
-    noOfFloors = parseInt(noOfFloors)
-    if (noOfFloors > 10) {
-        alert('Only 10 Floor are supported in the app currently !!')
-        return 0
+    noOfFloors = document.getElementById('noOfFloors').value
+    noOfLifts = document.getElementById('noOfLifts').value
+
+    if((noOfFloors< 0))
+    if((noOfLifts< 0)){
+        alert('❗❗ Negative values are not supported ❗❗')
     }
-    
-    if (isNaN(noOfLifts)) {
-        alert('enter a valid no of Lifts')
-        return 0
-    }
-    noOfLifts = parseInt(noOfLifts)
-    if (noOfLifts > 10) {
-        alert('Only 10 Lifts are supported in the app currently !!')
-        return 0
-    }
-    return 1
+    return true
 }
+  
 
-
+    
 const generateFloors = (n)=> {
     // console.log(document.getElementById('simulationArea').innerHTML)
     document.getElementById('simulationArea').innerHTML = ''
