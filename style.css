@@ -131,5 +131,47 @@ body {
 
 /* For mobile */
 @media (min-width: 320px) and (max-width: 480px) {
+   .lifts {
+        width: 30px;
+        height: 50px;
+        background-color: #ef81f3;
+        color: #ef81f3;
+        position: absolute;
+        left: 0;
+        top:0;
+        border: 1px solid;
+        align-items: center;
+        border-radius: 2.5px;
+        content: none;
+    }
     
+    .lifts p {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        transform: translate(-25%, -25%);
+    }
+    
+    .floor {
+        height: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #92ebe6;
+        padding: 2.5px;
+        border-bottom: black 0.5px dotted;
+    }
+    
+    .liftMotion{
+        transition-duration: 2s;
+    }
+    
+    .lifts .gate {
+        position: absolute;
+        height: 50%;
+        width: 25%;
+        border: 1px solid rgb(221, 142, 221);
+        background-color: black;;
+    }  
 }
