@@ -125,7 +125,7 @@ body {
 }
 
 /* For mobile */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
     .lifts {
         width: 30px;
         height: 50px;
