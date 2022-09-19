@@ -124,52 +124,56 @@ body {
     }
 }
 
-/* For laptop and small screens */
-@media (min-width: 769px) and (max-width: 1024px) {
-
-}
-
 /* For mobile */
-@media (min-width: 320px) and (max-width: 480px) {
-   .lifts {
+@media screen and (max-width: 550px) {
+    .lifts {
         width: 30px;
         height: 50px;
         background-color: #ef81f3;
         color: #ef81f3;
         position: absolute;
         left: 0;
-        top:0;
+/*         top:0; */
         border: 1px solid;
         align-items: center;
         border-radius: 2.5px;
         content: none;
+      bottom:0;
+      margin-top:50px;
     }
     
-   /* 
+    .lifts p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
     .floor {
-        height: 50px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+      height: 50px;  
+      position: relative;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
         background-color: #92ebe6;
         padding: 2.5px;
         border-bottom: black 0.5px dotted;
     }
-    .button-floor{
+    
+    .lifts .gate {
+        position: absolute;
+        height: 100%; 
+        width: 50%;
+        border: 1px solid rgb(221, 142, 221);
+        background-color: black;;
+    } 
+ .button-floor{
     justify-content: left;
     align-items: flex-start;
     background-color: #92ebe6;
     border: none;
     margin: -2px;
+} 
 }
-    */
-    
-    .lifts .gate {
-        position: absolute;
-        height: 50%;
-        width: 25%;
-        border: 1px solid rgb(221, 142, 221);
-        background-color: black;;
-    } 
-}
+
+
