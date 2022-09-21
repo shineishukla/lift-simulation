@@ -25,40 +25,54 @@ const validateLiftAndFloorEntries = ()=>{
     
     noOfFloors = document.getElementById('noOfFloors').value
     noOfLifts = document.getElementById('noOfLifts').value
-    // console.log(`noOfFloors is ${noOfFloors.value} and noOfLifts is ${noOfLifts}`)
     if ((noOfFloors == '0'))
     if ((noOfLifts == '0')) {
         alert('❗❗ Enter a valid number of floors and lifts  ❗❗')
         return false
     }
+  
     noOfFloors = document.getElementById('noOfFloors').value
     noOfLifts = document.getElementById('noOfLifts').value
-
     if ((noOfFloors == ''))
     if ((noOfLifts == '')) {
         alert('❗❗ Enter a valid number of floors and lifts ❗❗')
         return false
     }    
+  
+  noOfLifts = document.getElementById('noOfLifts').value
+    if ((noOfLifts == '')) {
+        alert('❗❗ Enter a valid number of lifts ❗❗')
+        return false
+    }   
+  
+  noOfLifts = document.getElementById('noOfFloors').value
+    if ((noOfFloors == '')) {
+        alert('❗❗ Enter a valid number of floors ❗❗')
+        return false
+    }   
+  
     noOfFloors = document.getElementById('noOfFloors').value
-    noOfLifts = document.getElementById('noOfLifts').value
-    
-    if ((noOfFloors > 10))
-    if ((noOfLifts > 10)){
-        alert('❗❗ Only 10 floor and lifts are supported in the app currently ❗❗')
+    if ((noOfFloors > 10)){
+        alert('❗❗ Only 10 floors are supported in the app currently ❗❗')
         return false
     }
+  
+  noOfLifts = document.getElementById('noOfLifts').value
+  if ((noOfLifts > 4)){
+    alert('❗❗ Only 4 lifts are supported in the app ❗❗')
+    return false
+  }
+  
     noOfFloors = document.getElementById('noOfFloors').value
     noOfLifts = document.getElementById('noOfLifts').value
-
     if((noOfFloors< 0))
     if((noOfLifts< 0)){
         alert('❗❗ Negative values are not supported ❗❗')
     }
     return true
 }
-  
 
-    
+
 const generateFloors = (n)=> {
     // console.log(document.getElementById('simulationArea').innerHTML)
     document.getElementById('simulationArea').innerHTML = ''
@@ -68,7 +82,7 @@ const generateFloors = (n)=> {
         let currFloor = document.createElement('div')
         currFloor.setAttribute('id',floorNo)
 
-        // console.log(document.getElementById(floorNo))
+        console.log(document.getElementById(floorNo))
         currFloor.classList.add('floor')
         currFloor.innerHTML = `
         <p>${floorNo}</p>
