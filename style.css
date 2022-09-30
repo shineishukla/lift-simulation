@@ -134,48 +134,46 @@ body {
         height: 50px;
         background-color: #ef81f3;
         color: #ef81f3;
-      font-size:0.5px;
+        font-size:0.5px;
         position: absolute;
         left: -10px;
-      margin-left:-14px;
-      margin-right:-4px;
-/*         top:0; */
+        margin-left:-14px;
+        margin-right:-4px;
+        top:0;
         border: 1px solid;
         align-items: center;
         border-radius: 2.5px;
         content: none;
-      bottom:0;
-      margin-top:50px;
-    }
+        bottom:0;
+        margin-top:50px;
+  }
     
     .lifts p {
         position: absolute;
         top: 20%;
         left: 20%;
         transform: translate(-50%, -50%);
-    }
+  }
     
     .floor {
-/* /*         height: 50px;    ---made change here */
-      height: 50px;  
+      height: 100%;  
       position: relative;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-        background-color: #92ebe6;
-        padding: 2.5px;
-        border-bottom: black 0.5px dotted;
-    }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+       background-color: #92ebe6;
+       padding: 2.5px;
+       border-bottom: black 0.5px dotted;
+  }
     
     .lifts .gate {
         position: absolute;
-        height: 100%;  
-/*        changed the height*/
+        height: 100%;
         width: 50%;
-/*   changed the width     */
         border: 1px solid rgb(221, 142, 221);
-        background-color: black;;
-    } 
+        background-color: black;
+  } 
+  
  .button-floor{
     justify-content: left;
     align-items: flex-start;
@@ -194,26 +192,24 @@ body {
         color: #ef81f3;
         font-size:0.5px;
         position: absolute;
-        left: 0;
-/*         top:0; */
+        left: 0; 
         border: 1px solid;
         align-items: center;
         border-radius: 2.5px;
         content: none;
-         bottom:0;
-      margin-top:50px;
-    }
+        bottom:0;
+        margin-top:50px;
+}
   
   .lifts p {
         position: absolute;
         top: 5%;
         left: 5%;
         transform: translate(-0%, -0%);
-    }
+}
     
-    .floor {
-/* /*         height: 50px;   ---made change here */
-      height: 50px;  
+  .floor {
+      height: 100%;  
       position: relative;
        display: flex;
        flex-direction: column;
@@ -221,17 +217,16 @@ body {
         background-color: #92ebe6;
         padding: 2.5px;
         border-bottom: black 0.5px dotted;
-    }
+  }
     
-    .lifts .gate {
+ .lifts .gate {
         position: absolute;
         height: 100%;  
-/*        changed the height*/
         width: 50%;
-/*   changed the width     */
         border: 1px solid rgb(221, 142, 221);
         background-color: black;;
-    } 
+}
+  
  .button-floor{
     justify-content: left;
     align-items: flex-start;
