@@ -31,9 +31,13 @@ body {
 .button-floor{
     justify-content: left;
     align-items: flex-start;
-    background-color: #92ebe6;
-    border: none;
-    margin: -4px;
+    background-color: #ef81f3;
+    border: 1px solid;
+    margin: 4px;
+    border-radius:2px;
+    font-size: 4px;
+  padding:2px;
+  margin-bottom: 2px;
 }
 
 .button-floor:hover {
@@ -177,9 +181,13 @@ body {
  .button-floor{
     justify-content: left;
     align-items: flex-start;
-    background-color: #92ebe6;
-    border: none;
-    margin: -2px;
+    background-color: #ef81f3;
+    border: 1px solid;
+    margin: 4px;
+    border-radius:2px;
+    font-size: 4px;
+  padding:2px;
+  margin-bottom: 2px;
 } 
 }
 
@@ -230,8 +238,12 @@ body {
  .button-floor{
     justify-content: left;
     align-items: flex-start;
-    background-color: #92ebe6;
-    border: none;
-    margin: -2px;
-} 
+    background-color: #ef81f3;
+    border: 1px solid;
+    margin: 4px;
+    border-radius:2px;
+    font-size: 4px;
+  padding:2px;
+  margin-bottom: 2px;
 }
+}    
