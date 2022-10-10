@@ -96,6 +96,7 @@ const generateFloors = (n)=> {
     }
 }
 
+
 function addButtonFunctionalities () {
     const allButtons = document.querySelectorAll('.button-floor')
     allButtons.forEach(btn => {
