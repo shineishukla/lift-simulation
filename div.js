@@ -87,7 +87,7 @@ const generateFloors = (n)=> {
         currFloor.innerHTML = `
         <p>${floorNo}</p>
         <div>
-        <button id=up${currLevel} class="button-floor upBttn">Up</button><br>
+        <button id=up${currLevel} class="button-floor upBttn">Up</button>
         <button id=down${currLevel} class="button-floor downBttn">Down</button>
         </div>
         `;
