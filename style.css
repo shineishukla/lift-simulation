@@ -34,10 +34,10 @@ body {
     background-color: #ef81f3;
     border: 1px solid;
     margin: 4px;
-    border-radius:2px;
-    font-size: 4px;
-  padding:2px;
-  margin-bottom: 2px;
+    border-radius:4px;
+    font-size: 10px;
+  padding:4px;
+  margin-bottom: 4px;
 }
 
 .button-floor:hover {
@@ -113,7 +113,7 @@ body {
 }
 
 .animateLiftsDoorsOnFloorStop  {
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-name: doorSimulation;
 }
@@ -179,15 +179,15 @@ body {
   } 
   
  .button-floor{
-    justify-content: left;
+   justify-content: left;
     align-items: flex-start;
     background-color: #ef81f3;
     border: 1px solid;
     margin: 4px;
-    border-radius:2px;
-    font-size: 4px;
-  padding:2px;
-  margin-bottom: 2px;
+    border-radius:4px;
+    font-size: 10px;
+  padding:4px;
+  margin-bottom: 4px;
 } 
 }
 
@@ -241,9 +241,9 @@ body {
     background-color: #ef81f3;
     border: 1px solid;
     margin: 4px;
-    border-radius:2px;
-    font-size: 4px;
-  padding:2px;
-  margin-bottom: 2px;
+    border-radius:4px;
+    font-size: 10px;
+  padding:4px;
+  margin-bottom: 4px;
 }
 }    
