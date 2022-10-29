@@ -31,13 +31,14 @@ body {
 .button-floor{
     justify-content: left;
     align-items: flex-start;
-    background-color: #ef81f3;
-    border: 1px solid;
-    margin: 4px;
-    border-radius:4px;
-    font-size: 6px;
+    background-color: #92ebe6;
+    border: none;
+    margin: 0px;
+    display:inline;
+    /*border-radius:2px;
+    font-size: 8px;
     padding:2px;
-    margin-bottom: 0.25px;
+    margin-bottom: 0.25px;*/
 }
 
 .button-floor:hover {
