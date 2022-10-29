@@ -177,19 +177,7 @@ body {
         width: 50%;
         border: 1px solid rgb(221, 142, 221);
         background-color: black;
-  } 
-  
- .button-floor{
-   justify-content: left;
-    align-items: flex-start;
-    background-color: #ef81f3;
-    border: 1px solid;
-    margin: 4px;
-    border-radius:4px;
-    font-size: 6px;
-    padding:2px;
-    margin-bottom: 4px;
-} 
+  }
 }
 
 
@@ -235,17 +223,5 @@ body {
         width: 50%;
         border: 1px solid rgb(221, 142, 221);
         background-color: black;;
-}
-  
- .button-floor{
-    justify-content: left;
-    align-items: flex-start;
-    background-color: #ef81f3;
-    border: 1px solid;
-    margin: 4px;
-    border-radius:4px;
-    font-size: 6px;
-    padding:2px;
-    margin-bottom: 4px;
 }
 }    
