@@ -58,8 +58,8 @@ const validateLiftAndFloorEntries = ()=>{
     }
   
   noOfLifts = document.getElementById('noOfLifts').value
-  if ((noOfLifts > 4)){
-    alert('❗❗ Only 4 lifts are supported in the app ❗❗')
+  if ((noOfLifts > 10)){
+    alert('❗❗ Only 10 lifts are supported in the app ❗❗')
     return false
   }
   
