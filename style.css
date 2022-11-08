@@ -178,6 +178,18 @@ body {
         border: 1px solid rgb(221, 142, 221);
         background-color: black;
   }
+.button-floor{
+    justify-content: left;
+    align-items: flex-start;
+    background-color: #ef81f3;
+    border: 1px solid;
+    margin: 5px;
+    border-radius:2px;
+    font-size: 8px;
+    padding:2px;
+    margin-bottom: 0.25px;
+    font-size: 2px;
+}     
 }
 
 
@@ -224,4 +236,16 @@ body {
         border: 1px solid rgb(221, 142, 221);
         background-color: black;;
 }
+.button-floor{
+    justify-content: left;
+    align-items: flex-start;
+    background-color: #ef81f3;
+    border: 1px solid;
+    margin: 5px;
+    border-radius:2px;
+    font-size: 8px;
+    padding:2px;
+    margin-bottom: 0.25px;
+    font-size: 2px;
+}     
 }    
