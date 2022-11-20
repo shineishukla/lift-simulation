@@ -33,12 +33,12 @@ body {
     align-items: flex-start;
     background-color: #ef81f3;
     border: 1px solid;
-    margin: 5px;
+    margin: 2px;
     border-radius:2px;
-    font-size: 8px;
-    padding:2px;
-    margin-bottom: 0.25px;
-    font-size: 2px;
+    font-size: 10px;
+    padding:5px 5px;
+    margin-bottom: 5px;
+    display: inline;
 }
 
 .button-floor:hover {
@@ -178,7 +178,7 @@ body {
         border: 1px solid rgb(221, 142, 221);
         background-color: black;
   }
-.button-floor{
+/*.button-floor{
     justify-content: left;
     align-items: flex-start;
     background-color: #ef81f3;
@@ -189,7 +189,7 @@ body {
     padding:2px;
     margin-bottom: 0.25px;
     font-size: 2px;
-}     
+}    */ 
 }
 
 
@@ -236,7 +236,7 @@ body {
         border: 1px solid rgb(221, 142, 221);
         background-color: black;;
 }
-.button-floor{
+/*.button-floor{
     justify-content: left;
     align-items: flex-start;
     background-color: #ef81f3;
@@ -247,5 +247,5 @@ body {
     padding:2px;
     margin-bottom: 0.25px;
     font-size: 2px;
-}     
+}  */   
 }    
