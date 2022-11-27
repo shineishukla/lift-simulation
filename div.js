@@ -23,54 +23,61 @@ function startVirtualSimulation () {
 
 const validateLiftAndFloorEntries = ()=>{
     
-    noOfFloors = document.getElementById('noOfFloors').value
-    noOfLifts = document.getElementById('noOfLifts').value
-    if ((noOfFloors == '0'))
-    if ((noOfLifts == '0')) {
+    noOfFloors = document.getElementById('noOfFloors').value;
+    noOfLifts = document.getElementById('noOfLifts').value;
+    if (window.innerWidth <= 500 && noOfLifts > 2) {
+        alert("This screen size can't have more than 2 lifts");
+    }
+    else if (window.innerWidth > 500 && window.innerWidth <= 768 && noOfLifts > 6) {
+        alert("This screen size can't have more than 6 lifts");
+    }
+    else {
+        generateFloors(noOfFloors);
+        // console.log("no of floors- ", floors);
+        generateLifts(noOfLifts);
+        // console.log("no of lifts- ", lifts);
+    }
+
+    if ((noOfFloors == '0') & (noOfLifts == '0')) {
         alert('❗❗ Enter a valid number of floors and lifts  ❗❗')
-        return false
+        
     }
   
-    noOfFloors = document.getElementById('noOfFloors').value
-    noOfLifts = document.getElementById('noOfLifts').value
-    if ((noOfFloors == ''))
-    if ((noOfLifts == '')) {
+    else if ((noOfFloors == '')& (noOfLifts == '')) {
         alert('❗❗ Enter a valid number of floors and lifts ❗❗')
-        return false
+        
     }    
   
-  noOfLifts = document.getElementById('noOfLifts').value
-    if ((noOfLifts == '')) {
+ 
+    else if ((noOfLifts == '')) {
         alert('❗❗ Enter a valid number of lifts ❗❗')
-        return false
+        
     }   
-  
-  noOfLifts = document.getElementById('noOfFloors').value
-    if ((noOfFloors == '')) {
+
+    else if ((noOfFloors == '')) {
         alert('❗❗ Enter a valid number of floors ❗❗')
-        return false
+        
     }   
   
-    noOfFloors = document.getElementById('noOfFloors').value
-    if ((noOfFloors > 10)){
+    
+    else if ((noOfFloors > 10)){
         alert('❗❗ Only 10 floors are supported in the app currently ❗❗')
-        return false
+        
     }
   
-  noOfLifts = document.getElementById('noOfLifts').value
-  if ((noOfLifts > 10)){
+  else if ((noOfLifts > 10)){
     alert('❗❗ Only 10 lifts are supported in the app ❗❗')
-    return false
+    
   }
   
-    noOfFloors = document.getElementById('noOfFloors').value
-    noOfLifts = document.getElementById('noOfLifts').value
-    if((noOfFloors< 0))
-    if((noOfLifts< 0)){
+
+    else if((noOfFloors< 0)&  (noOfLifts< 0)){
         alert('❗❗ Negative values are not supported ❗❗')
     }
-    return true
+    
+    
 }
+
 
 
 const generateFloors = (n)=> {
@@ -82,7 +89,7 @@ const generateFloors = (n)=> {
         let currFloor = document.createElement('div')
         currFloor.setAttribute('id',floorNo)
 
-        console.log(document.getElementById(floorNo))
+        // console.log(document.getElementById(floorNo))
         currFloor.classList.add('floor')
         currFloor.innerHTML = `
         <p>${floorNo}</p>
@@ -95,7 +102,6 @@ const generateFloors = (n)=> {
         document.getElementById('simulationArea').appendChild(currFloor);
     }
 }
-
 
 function addButtonFunctionalities () {
     const allButtons = document.querySelectorAll('.button-floor')
@@ -139,9 +145,9 @@ function translateLift(liftNo,targetLiftPosn) {
 
     if (currLiftPosn != targetLiftPosn) {
         allLiftInfo[liftNo].inMotion = true
-        let unitsToMove = (Math.abs(targetLiftPosn - currLiftPosn)+1)
-        let motionDis = -100 * (targetLiftPosn)
-        
+        let unitsToMove = parseInt(Math.abs(targetLiftPosn - currLiftPosn)+1)
+        let motionDis = -100 * parseInt(targetLiftPosn)
+        // console.log(`dis is ${motionDis}`)
         reqLift.style.transitionTimingFunction = 'linear'
         reqLift.style.transform = `translateY(${motionDis}px)`;
         reqLift.style.transitionDuration = `${unitsToMove*1}s`;
@@ -213,6 +219,9 @@ const generateLifts = (n)=> {
         allLiftInfo.push(currliftDetail)
     }
 }
+
+  
+
 
 function fullfillLiftCallsQueue () {
     if (!(liftCallsQueue.length)) return;
