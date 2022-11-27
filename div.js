@@ -23,13 +23,16 @@ function startVirtualSimulation () {
 
 const validateLiftAndFloorEntries = ()=>{
     
-    noOfFloors = document.getElementById('noOfFloors').value;
-    noOfLifts = document.getElementById('noOfLifts').value;
-    if (window.innerWidth <= 500 && noOfLifts > 2) {
+    noOfFloors = document.getElementById('noOfFloors').value
+    noOfLifts = document.getElementById('noOfLifts').value
+  if (window.innerWidth <= 500 && noOfLifts > 2) {
         alert("This screen size can't have more than 2 lifts");
+    //simulationArea.style.display="none";
     }
     else if (window.innerWidth > 500 && window.innerWidth <= 768 && noOfLifts > 6) {
         alert("This screen size can't have more than 6 lifts");
+     // simulationArea.style.display="none";
+      return false
     }
     else {
         generateFloors(noOfFloors);
@@ -37,46 +40,54 @@ const validateLiftAndFloorEntries = ()=>{
         generateLifts(noOfLifts);
         // console.log("no of lifts- ", lifts);
     }
-
-    if ((noOfFloors == '0') & (noOfLifts == '0')) {
+    if ((noOfFloors == '0'))
+    if ((noOfLifts == '0')) {
         alert('❗❗ Enter a valid number of floors and lifts  ❗❗')
-        
+        return false
     }
   
-    else if ((noOfFloors == '')& (noOfLifts == '')) {
+   // noOfFloors = document.getElementById('noOfFloors').value
+   // noOfLifts = document.getElementById('noOfLifts').value
+    if ((noOfFloors == ''))
+    if ((noOfLifts == '')) {
         alert('❗❗ Enter a valid number of floors and lifts ❗❗')
-        
+        return false
     }    
   
- 
-    else if ((noOfLifts == '')) {
+  //noOfLifts = document.getElementById('noOfLifts').value
+    if ((noOfLifts == '')) {
         alert('❗❗ Enter a valid number of lifts ❗❗')
-        
-    }   
-
-    else if ((noOfFloors == '')) {
-        alert('❗❗ Enter a valid number of floors ❗❗')
-        
+        return false
     }   
   
-    
-    else if ((noOfFloors > 10)){
+ // noOfLifts = document.getElementById('noOfFloors').value
+    if ((noOfFloors == '')) {
+        alert('❗❗ Enter a valid number of floors ❗❗')
+        return false
+    }   
+  
+   // noOfFloors = document.getElementById('noOfFloors').value
+    if ((noOfFloors > 10)){
         alert('❗❗ Only 10 floors are supported in the app currently ❗❗')
-        
+        return false
     }
   
-  else if ((noOfLifts > 10)){
+ // noOfLifts = document.getElementById('noOfLifts').value
+  if ((noOfLifts > 10)){
     alert('❗❗ Only 10 lifts are supported in the app ❗❗')
-    
+    return false
   }
   
-
-    else if((noOfFloors< 0)&  (noOfLifts< 0)){
+    //noOfFloors = document.getElementById('noOfFloors').value
+    //noOfLifts = document.getElementById('noOfLifts').value
+    if((noOfFloors< 0))
+    if((noOfLifts< 0)){
         alert('❗❗ Negative values are not supported ❗❗')
     }
-    
-    
+
+  return true
 }
+
 
 
 
