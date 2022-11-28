@@ -49,6 +49,15 @@ const validateLiftAndFloorEntries = ()=>{
         return false
     }
   
+    if ((noOfFloors == '0')){
+        alert('❗❗ Enter a valid number of floors  ❗❗')
+        return false
+    }
+ 
+    if ((noOfLifts == '0')) {
+        alert('❗❗ Enter a valid number of lifts  ❗❗')
+        return false
+    }
     if ((noOfFloors == ''))
     if ((noOfLifts == '')) {
         alert('❗❗ Enter a valid number of floors and lifts ❗❗')
