@@ -27,21 +27,13 @@ const validateLiftAndFloorEntries = ()=>{
     noOfLifts = document.getElementById('noOfLifts').value
   if (window.innerWidth <= 480 && noOfLifts > 3) {
         alert("This screen size can't have more than 3 lifts");
-    //simulationArea.style.display="none";
     return false
     }
-    if (window.innerWidth > 481 && window.innerWidth <= 768 && noOfLifts > 5) {
+    if (window.innerWidth > 481 && window.innerWidth <= 767 && noOfLifts > 5) {
         alert("This screen size can't have more than 5 lifts");
-     // simulationArea.style.display="none";
      return false
     }
-   /* else {
-        generateFloors(noOfFloors);
-        // console.log("no of floors- ", floors);
-        generateLifts(noOfLifts);
-        // console.log("no of lifts- ", lifts);
-    
-    }*/
+   
   
     if ((noOfFloors == '0'))
     if ((noOfLifts == '0')) {
