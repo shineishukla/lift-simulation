@@ -114,7 +114,7 @@ body {
 }
 
 .animateLiftsDoorsOnFloorStop  {
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-name: doorSimulation;
 }
