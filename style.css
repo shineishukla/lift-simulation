@@ -6,19 +6,18 @@ h1{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:10px;
-    color:antiquewhite;
+    color:black;
 }
 
-html {
-    background-image: url("https://cutewallpaper.org/21/cool-blue-and-black-background/50-Blue-and-Black-Backgrounds-Wallpapers-on-WallpaperSafari.jpg");
-    margin: 10px;
+body{
+    background-color:#92ebe6;
 }
 
 .floor-input,
 .lift-input {
     margin: 5px;
     font-size: 20px;
-    color: antiquewhite;
+    color: black;
 }
 
 .floor-input input,
@@ -29,7 +28,7 @@ html {
     padding: 5px 10px;
     font-size: 20px;
     font-family: sans-serif;
-    color: aliceblue;
+    color: black;
 }
 
 .button-floor{
@@ -96,7 +95,7 @@ html {
     justify-content: space-between;
     padding: 5px;
     border-bottom:white 1px dotted;
-    color: whitesmoke;
+    color: black;
 }
 
 .liftMotion{
