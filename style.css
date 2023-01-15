@@ -5,10 +5,12 @@
 h1{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:10px;
+    color:antiquewhite;
 }
 
-body {
-    background-color: #92ebe6;
+html {
+    background-image: url("https://cutewallpaper.org/21/cool-blue-and-black-background/50-Blue-and-Black-Backgrounds-Wallpapers-on-WallpaperSafari.jpg");
     margin: 10px;
 }
 
@@ -16,16 +18,18 @@ body {
 .lift-input {
     margin: 5px;
     font-size: 20px;
+    color: antiquewhite;
 }
 
 .floor-input input,
 .lift-input input {
-    background-color: white;
+    background-color: grey;
     border:#111;
     border-radius: 5px;
     padding: 5px 10px;
     font-size: 20px;
     font-family: sans-serif;
+    color: aliceblue;
 }
 
 .button-floor{
@@ -53,6 +57,7 @@ body {
     border-radius: 5px;
     border: none;
     background-color:#ef81f3;
+    margin-right:auto;
 }
 
 .generatebutton:hover {
@@ -72,6 +77,7 @@ body {
     align-items: center;
     border-radius: 5px;
     content: none;
+
   
 }
 
@@ -88,9 +94,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #92ebe6;
     padding: 5px;
-    border-bottom: black 1px dotted;
+    border-bottom:white 1px dotted;
+    color: whitesmoke;
 }
 
 .liftMotion{
@@ -102,7 +108,8 @@ body {
     height: 100%;
     width: 50%;
     border: 1px solid rgb(221, 142, 221);
-    background-color: black;;
+    background-color: black;
+
 }
 
 .gateLeft {
@@ -234,7 +241,7 @@ body {
         height: 100%;  
         width: 50%;
         border: 1px solid rgb(221, 142, 221);
-        background-color: black;;
+        background-color: black;
 }
 /*.button-floor{
     justify-content: left;
