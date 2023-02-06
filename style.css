@@ -22,7 +22,7 @@ body{
 
 .floor-input input,
 .lift-input input {
-    background-color: grey;
+    background-color: white;
     border:#111;
     border-radius: 5px;
     padding: 5px 10px;
