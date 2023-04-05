@@ -56,11 +56,12 @@ const validateLiftAndFloorEntries = ()=>{
         return false
     }    
   
-      noOfFLifts = document.getElementById('noOfLifts').value
+    noOfLifts = document.getElementById('noOfLifts').value
     if ((noOfLifts == '')) {
         alert('❗❗ Enter a valid number of lifts ❗❗')
         return false
     }   
+    
     noOfFloors = document.getElementById('noOfFloors').value
     if ((noOfFloors == '')) {
         alert('❗❗ Enter a valid number of floors ❗❗')
@@ -77,8 +78,8 @@ const validateLiftAndFloorEntries = ()=>{
     alert('❗❗ Only 10 lifts are supported in the app ❗❗')
     return false
   }
-  
-    noOfFloors = document.getElementById('noOfFloors').value
+   
+   noOfFloors = document.getElementById('noOfFloors').value
     noOfLifts = document.getElementById('noOfLifts').value
     if((noOfFloors< 0))
     if((noOfLifts< 0)){
@@ -136,6 +137,11 @@ function addButtonFunctionalities () {
             }
         })
     })
+}
+
+function disablebtn(){
+    document.getElementById("up").disabled = true;
+
 }
 
 function translateLiftOld(liftNo,targetLiftPosn) {
