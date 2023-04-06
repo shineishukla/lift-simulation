@@ -76,8 +76,6 @@ body{
     align-items: center;
     border-radius: 5px;
     content: none;
-
-  
 }
 
 .lifts p {
@@ -108,7 +106,6 @@ body{
     width: 50%;
     border: 1px solid rgb(221, 142, 221);
     background-color: black;
-
 }
 
 .gateLeft {
