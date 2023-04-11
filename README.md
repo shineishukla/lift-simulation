@@ -1,7 +1,8 @@
 # Lift-simulation
-Developed a lift simulation project using HTML, CSS and JavaScript.
+Create a web app where you can simulate lift mechanics for a client
 
-![Screenshot (517)](https://user-images.githubusercontent.com/109728779/186718107-0c0924f1-2099-4ff9-9df9-332f870aa512.png)
+
+![alt text](https://raw.githubusercontent.com/Real-Dev-Squad/Lift-Simulation/main/Lift-Simulation-Example.png)
 
 # Requirements
 1. Have a page where you input the number of floors and lifts from the user
