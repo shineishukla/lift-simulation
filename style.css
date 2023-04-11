@@ -139,7 +139,7 @@ footer {
     flex-direction: column;
     background-color: #92ebe6;
     align-items: center;
-    color:#5a01a7;
+    color:#ef81f3;
     bottom: 0;
     width:100%;
 }
@@ -155,19 +155,19 @@ footer {
 .social-media {
     display:flex;
     justify-content: center;
-    color:#5a01a7;
+    color:#ef81f3;
     flex-wrap: wrap;
 }
 
 .social-media a {
-    color:#5a01a7;
+    color:#ef81f3;
     margin:20px;
     border-radius: 5px;
     margin-top:10px;
 }
 
 .social-media a .bxl {
-    color:#5a01a7;
+    color:#ef81f3;
     background-color: none;
 }
 
